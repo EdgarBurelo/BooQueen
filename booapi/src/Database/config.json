@@ -1,0 +1,14 @@
+{
+  "database": {
+    "username": "root",
+    "password": "password",
+    "database": "booqueen",
+    "host": "localhost",
+    "port": 3307,
+    "logging": true,
+    "dialect": "mysql",
+    "sync": {
+      "force": false
+    }
+  }
+}

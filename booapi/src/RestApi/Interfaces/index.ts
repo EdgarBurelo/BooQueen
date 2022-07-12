@@ -1,3 +1,4 @@
 import { Car } from './Car.interface';
+import { Office } from './Office.interface';
 
-export { Car };
+export { Car, Office };

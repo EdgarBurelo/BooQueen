@@ -34,6 +34,6 @@ Car.init({
     timestamps: true,
     sequelize: sequelizeConnection,
     paranoid: true
-})
+});
 
 export default Car

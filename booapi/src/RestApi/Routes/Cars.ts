@@ -11,9 +11,8 @@ carRouter.get('/', async (req: Request, res: Response) => {
 
 carRouter.post('/book/', async (req: Request, res: Response) => {
     const payload:createUserCarDTO = req.body;
-
     const newCarBooking = await carController.create(payload);
-    console.log(newCarBooking)
+
 
     return res.status(200).send(newCarBooking);
 })

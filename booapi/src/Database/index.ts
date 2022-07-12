@@ -23,8 +23,6 @@ const options = process.env.MODE as string === 'development' ?
         dialect: dbDriver
     };
 
-console.log(options, process.env.MODE);
-
 const sequelizeConnection = new Sequelize(dbName, dbUser, dbPassword, options);
 
 export default sequelizeConnection

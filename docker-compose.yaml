@@ -17,6 +17,7 @@ services:
       MYSQL_HOST: db
       DB_DRIVER: mysql
       MYSQL_PORT: db.port
+      MODE: 'production'
     ports:
       - "5005:5005"
     depends_on:

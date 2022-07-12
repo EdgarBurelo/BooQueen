@@ -1,10 +1,14 @@
 import * as UserCarRepository from "../Repository/UserCarRepository";
-import { UserCarOutput } from "../Entity/UserCar";
+import { UserCarOutput, UserCarInput } from "../Entity/UserCar";
 
 export const getAll = (): Promise<UserCarOutput[]> => {
     return UserCarRepository.getAll();
 }
 
-export const getOne = (): Promise<UserCarOutput> => {
-    return UserCarRepository.getOne();
+export const getOne = (payload: UserCarInput): Promise<UserCarOutput> => {
+    return UserCarRepository.getOne(payload)
+}
+
+export const create = (payload: UserCarInput): Promise<UserCarOutput> => {
+    return UserCarRepository.create(payload);
 }

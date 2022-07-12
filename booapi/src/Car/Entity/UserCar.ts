@@ -10,8 +10,6 @@ export interface UserCarAttributes {
     deletedAt?: Date;
 }
 
-
-
 export interface UserCarInput extends Optional<UserCarAttributes, 'id'> {}
 export interface UserCarOutput extends Required<UserCarAttributes> {
     Car?: NonAttribute<Car>

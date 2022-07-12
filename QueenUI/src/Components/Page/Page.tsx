@@ -6,7 +6,7 @@ export interface LayoutProps  {
     children: React.ReactNode
 }
 
-export const Page: React.FC<LayoutProps> = ({children}: LayoutProps) => {
+export const Page: React.FC<LayoutProps> = ({ children }: LayoutProps) => {
     return (
         <div className='page'>
             {children}
